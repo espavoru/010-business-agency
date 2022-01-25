@@ -31,7 +31,12 @@ let config = {
   'addAssets': {
     // 'src/img/demo-*.{png,svg,jpg,jpeg}': 'img/',
     // 'src/fonts/demo-empty-open-sans.woff2': 'fonts/',
-    // 'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
+    'src/fonts/MADE Soulmaze Brush PERSONAL USE.otf': 'fonts/',
+    'src/fonts/MADE Soulmaze Italic PERSONAL USE.otf': 'fonts/',
+    'src/fonts/MADE Soulmaze Outline Italic PERSONAL USE.otf': 'fonts/',
+    'src/fonts/MADE Soulmaze Outline PERSONAL USE.otf': 'fonts/',
+    'src/fonts/MADE Soulmaze PERSONAL USE.otf': 'fonts/',
+    'src/favicon/*.{png,ico,svg,xml,webmanifest}': 'img/favicon',
     // 'node_modules/somePackage/images/*.{png,svg,jpg,jpeg}': 'img/',
   },
   'dir': {
@@ -40,7 +45,7 @@ let config = {
     'blocks': 'src/blocks/'
   },
   'optionsGHpages': {
-    'remote': 'quiz-app', // options for github-pages
+    'remote': 'business-agency', // options for github-pages
   }
 };
 

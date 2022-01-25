@@ -2,17 +2,20 @@ extends ../pug/layout.pug
 
 append config
   -
-    currentTitle = 'Главная'
-    currentDescription = 'Pink app'
+    currentTitle = 'Business Agency'
+    currentDescription = 'Website'
     currentUrl = 'index.html'
 
-block content
-  h1 Top news
+block header
 
-  ol
-    li Man Found Having Tea Party With Donkey Again
-    li Woman With Epic Tattoo Arrested for 37th Time
-    li Viral Photo of Donkey Had Been Photoshopped
-    li Man Buys Hats For Low Income Local Family
-    li Man Jailed For Threatening Wife With Crumpled Hawk
-    li Small Tornado Forcast in Northern Regions
+block content
+  section.banner
+    .banner__wrapper
+      h2.banner__heading
+        span.banner__text Business Ideas
+        span.banner__text Consulting
+        span.banner__text Digital Marketing
+        span.banner__text Strategy
+      p.banner__paragraph Lorem ipsum dolor sit.
+      +btn('Discover Now').banner__btn
+  ///.banner

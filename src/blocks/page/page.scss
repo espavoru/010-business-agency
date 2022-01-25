@@ -23,6 +23,13 @@
 //   font-style: normal;
 //   font-display: swap;
 // }
+@font-face {
+  font-family: 'Soulmaze';
+  src: url('../fonts/MADE Soulmaze PERSONAL USE.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 /* stylelint-enable */
 
 
@@ -32,6 +39,7 @@
   -webkit-text-size-adjust: 100%; // stylelint-disable-line
   min-width: 320px;
   min-height: 100%;
+  font-size: 62.5%;
 
   &__inner {
     display: flex;

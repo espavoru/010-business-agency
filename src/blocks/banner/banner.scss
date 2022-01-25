@@ -1,0 +1,88 @@
+// В этом файле должны быть стили для БЭМ-блока banner, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.banner {
+
+  $block-name:                &; // #{$block-name}__element
+
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('../img/banner-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $screen-xs) {
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/banner-bg@2x.webp');
+
+      .no-webp & {
+        background-image: url('../img/banner-bg@2x.jpg');
+      }
+    }
+
+    .no-webp & {
+      background-image: url('../img/banner-bg.jpg');
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+
+    text-align: center;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    font-family: 'Oswald', sans-serif; // stylelint-disable-line
+    font-size: 12rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+  }
+
+  &__paragraph {
+    width: 30%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    padding: 1rem 0;
+
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+  }
+
+  &__btn.btn {
+    width: 30rem;
+    height: 6rem;
+    border: 1rem solid #800505;
+    border-radius: 3rem;
+
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    background: linear-gradient(to right, #9b0e0e, #7a1010);
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0.6rem 0.3rem 0.2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+}
