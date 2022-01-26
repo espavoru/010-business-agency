@@ -7,6 +7,28 @@ append config
     currentUrl = 'index.html'
 
 block header
+  nav.navbar
+    +logo('#')
+      span C
+      |ode
+      span A
+      |nd
+      span C
+      |reate
+
+    .navbar__list
+      a.navbar__link(href='#') Home
+      a.navbar__link(href='#') About
+      a.navbar__link(href='#') Pricing
+      a.navbar__link(href='#') Blog
+      a.navbar__link(href='#') Contact
+  ///.navbar
+
+  .menu
+    .menu__line
+    .menu__line
+    .menu__line
+  ///.menu
 
 block content
   section.banner
