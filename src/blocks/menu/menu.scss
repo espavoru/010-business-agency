@@ -18,10 +18,24 @@
 
   cursor: pointer;
 
+  &.change {
+
+    #{$block-name}__line:first-of-type {
+      transform: translate(100%, 1rem) rotate(-35deg);
+      transform-origin: right;
+    }
+
+    #{$block-name}__line:last-of-type {
+      transform: translateY(-1rem) rotate(35deg);
+      transform-origin: right;
+    }
+  }
+
   &__line {
     width: 100%;
     height: 0.2rem;
 
+    transition: transform 0.3s;
     background-color: #eee;
 
     &:first-of-type {
