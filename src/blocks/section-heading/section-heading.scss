@@ -13,10 +13,13 @@
   font-size: 10rem;
   font-weight: 300;
   color: #ddd;
+  white-space: nowrap;
 
   &__line {
     width: 15rem;
     height: 0.2rem;
+    margin-top: 3rem;
+
     background-color: #ddd;
   }
 }

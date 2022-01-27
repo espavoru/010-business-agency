@@ -57,5 +57,116 @@ block content
       i.fas.fa-quote-left
       | Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem porro consectetur et fuga, esse nobis, distinctio provident quisquam, aperiam animi repellat facere? Maiores corrupti provident neque vero quos quasi nemo, odit odio veritatis facilis non, cupiditate numquam rem iste. Ullam.
       i.fas.fa-quote-right
-
   ///.about-us
+
+  section.pricing
+    h2.section-heading Pricing
+    .section-heading__line
+
+    .swiper
+      .pricing__cards-wrapper.swiper-wrapper
+
+        .pricing__card.swiper-slide
+          .pricing__card-front
+            h3.pricing__card-heading.pricing__card-heading--free Free
+            h4.pricing__card-price $0
+            ul.pricing__card-list.pricing__card-list--free
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-times
+                span Pricing Card Item
+              li
+                i.fas.fa-times
+                span Pricing Card Item
+              li
+                i.fas.fa-times
+                span Pricing Card Item
+            +btn('Choose Plan','free').pricing__card-button
+          .pricing__card-back.pricing__card-back--free
+            a(href='#') Order Now
+        ///.pricing__card
+
+        .pricing__card.swiper-slide
+          .pricing__card-front
+            h3.pricing__card-heading.pricing__card-heading--basic Basic
+            h4.pricing__card-price $299
+            ul.pricing__card-list.pricing__card-list--basic
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-times
+                span Pricing Card Item
+            +btn('Choose Plan','basic').pricing__card-button
+          .pricing__card-back.pricing__card-back--basic
+            a(href='#') Order Now
+        ///.pricing__card
+
+        .pricing__card.swiper-slide
+          .pricing__card-front
+            h3.pricing__card-heading.pricing__card-heading--standard Standard
+            h4.pricing__card-price $699
+            ul.pricing__card-list.pricing__card-list--standard
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+            +btn('Choose Plan','standard').pricing__card-button
+          .pricing__card-back.pricing__card-back--standard
+            a(href='#') Order Now
+        ///.pricing__card
+
+        .pricing__card.swiper-slide
+          .pricing__card-front
+            h3.pricing__card-heading.pricing__card-heading--premium Premium
+            h4.pricing__card-price $999
+            ul.pricing__card-list.pricing__card-list--premium
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+              li
+                i.fas.fa-check
+                span Pricing Card Item
+            +btn('Choose Plan','premium').pricing__card-button
+          .pricing__card-back.pricing__card-back--premium
+            a(href='#') Order Now
+        ///.pricing__card
+
+  ///.pricing

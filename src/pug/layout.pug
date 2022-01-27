@@ -42,6 +42,9 @@ html(class='page no-js', lang=lang)
     block head
       if Bootstrap4
         //- link for Bootstrap 4 css styles
+      //- Swiper JS
+      link(rel='stylesheet' href='https://unpkg.com/swiper@7/swiper-bundle.min.css')
+
       link(rel='stylesheet', href='css/style.css')
       script
         include ../js/head-script.js
@@ -69,5 +72,8 @@ html(class='page no-js', lang=lang)
 
       if Bootstrap4
         //- link to Bootstrap scripts
+
+      //- Swiper js
+      script(defer src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
 
       script(defer src='js/bundle.js')
