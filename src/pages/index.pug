@@ -41,3 +41,21 @@ block content
       p.banner__paragraph Lorem ipsum dolor sit.
       +btn('Discover Now').banner__btn
   ///.banner
+
+  section.about-us
+    h2.section-heading About Us
+    .section-heading__line
+    .video__wrapper
+      video.video(src='video/about-us-video.mp4')
+      .video__controls
+        .video__bar-wrapper
+          .video__bar
+        .video__buttons
+          +btn()
+            i.fas.fa-play-circle
+    p.about-us__paragraph
+      i.fas.fa-quote-left
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem porro consectetur et fuga, esse nobis, distinctio provident quisquam, aperiam animi repellat facere? Maiores corrupti provident neque vero quos quasi nemo, odit odio veritatis facilis non, cupiditate numquam rem iste. Ullam.
+      i.fas.fa-quote-right
+
+  ///.about-us

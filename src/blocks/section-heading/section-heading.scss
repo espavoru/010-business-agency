@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока section-heading, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.section-heading {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-right: 4rem;
+
+  font-family: Oswald, sans-serif;
+  font-size: 10rem;
+  font-weight: 300;
+  color: #ddd;
+
+  &__line {
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #ddd;
+  }
+}
