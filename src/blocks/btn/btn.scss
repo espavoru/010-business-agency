@@ -41,7 +41,8 @@
 
   &:active,
   &:focus {
-    @include field-focus;
+    border: none;
+    // @include field-focus;
   }
 
   &--disabled,
