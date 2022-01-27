@@ -130,6 +130,17 @@ eval("var menu = document.querySelector('.menu');\nvar navbar = document.querySe
 
 /***/ }),
 
+/***/ "./src/blocks/video/video.js":
+/*!***********************************!*\
+  !*** ./src/blocks/video/video.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var video = document.querySelector('.video');\nvar btn = document.querySelector('.video__buttons i');\nvar bar = document.querySelector('.video__bar');\n\nvar playPause = function playPause() {\n  if (video.paused) {\n    video.play();\n    btn.className = 'far fa-pause-circle';\n    video.style.opacity = '0.7';\n  } else {\n    video.pause();\n    btn.className = 'far fa-play-circle';\n    video.style.opacity = '0.3';\n  }\n};\n\nbtn.addEventListener('click', function () {\n  playPause();\n});\nvideo.addEventListener('timeupdate', function () {\n  var barWidth = video.currentTime / video.duration;\n  bar.style.width = \"\".concat(barWidth * 100, \"%\");\n\n  if (video.ended) {\n    btn.className = 'far fa-play-circle';\n    video.style.opacity = '0.3';\n  }\n});\n\n//# sourceURL=webpack:///./src/blocks/video/video.js?");
+
+/***/ }),
+
 /***/ "./src/js/entry.js":
 /*!*************************!*\
   !*** ./src/js/entry.js ***!
@@ -137,7 +148,7 @@ eval("var menu = document.querySelector('.menu');\nvar navbar = document.querySe
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ../blocks/video/video.js */ \"./src/blocks/video/video.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
