@@ -97,6 +97,17 @@ eval("var ready = __webpack_require__(/*! ../../js/utils/documentReady.js */ \".
 
 /***/ }),
 
+/***/ "./src/blocks/field-text/field-text.js":
+/*!*********************************************!*\
+  !*** ./src/blocks/field-text/field-text.js ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// const autosize = require('autosize');\n// const ready = require('../../js/utils/documentReady.js');\n// ready(function(){\n//   autosize(document.querySelectorAll('textarea'));\n// });\n\n//# sourceURL=webpack:///./src/blocks/field-text/field-text.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/main-nav/main-nav.js":
 /*!*****************************************!*\
   !*** ./src/blocks/main-nav/main-nav.js ***!
@@ -137,7 +148,7 @@ eval("var menu = document.querySelector('.menu');\nvar navbar = document.querySe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/*global Swiper*/\nvar swiper = new Swiper('.swiper', {\n  effect: 'coverflow',\n  grabCursor: true,\n  centeredSlides: true,\n  slidesPerView: 'auto',\n  coverflowEffect: {\n    rotate: 50,\n    stretch: 0,\n    depth: 100,\n    modifier: 1,\n    slideShadows: true\n  }\n});\nswiper.slideNext();\n\n//# sourceURL=webpack:///./src/blocks/pricing/pricing.js?");
+eval("/*global Swiper*/\nvar swiper = new Swiper('.pricingSwiper', {\n  effect: 'coverflow',\n  grabCursor: true,\n  centeredSlides: true,\n  slidesPerView: 'auto',\n  coverflowEffect: {\n    rotate: 50,\n    stretch: 0,\n    depth: 100,\n    modifier: 1,\n    slideShadows: true\n  }\n});\nswiper.slideNext();\n\n//# sourceURL=webpack:///./src/blocks/pricing/pricing.js?");
 
 /***/ }),
 
@@ -159,7 +170,7 @@ eval("var video = document.querySelector('.video');\nvar btn = document.querySel
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ../blocks/pricing/pricing.js */ \"./src/blocks/pricing/pricing.js\");\n\n__webpack_require__(/*! ../blocks/video/video.js */ \"./src/blocks/video/video.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
+eval("/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n__webpack_require__(/*! ../blocks/modernizr/modernizr.js */ \"./src/blocks/modernizr/modernizr.js\");\n\n__webpack_require__(/*! ../blocks/burger/burger.js */ \"./src/blocks/burger/burger.js\");\n\n__webpack_require__(/*! ../blocks/field-text/field-text.js */ \"./src/blocks/field-text/field-text.js\");\n\n__webpack_require__(/*! ../blocks/main-nav/main-nav.js */ \"./src/blocks/main-nav/main-nav.js\");\n\n__webpack_require__(/*! ../blocks/navbar/navbar.js */ \"./src/blocks/navbar/navbar.js\");\n\n__webpack_require__(/*! ../blocks/pricing/pricing.js */ \"./src/blocks/pricing/pricing.js\");\n\n__webpack_require__(/*! ../blocks/video/video.js */ \"./src/blocks/video/video.js\");\n\n__webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n/*!*\n * ВНИМАНИЕ! Этот файл генерируется автоматически.\n * Любые изменения этого файла будут потеряны при следующей компиляции.\n * Любое изменение проекта без возможности компиляции ДОЛЬШЕ И ДОРОЖЕ в 2-5 раз.\n */\n\n//# sourceURL=webpack:///./src/js/entry.js?");
 
 /***/ }),
 
