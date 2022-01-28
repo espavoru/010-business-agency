@@ -17,11 +17,11 @@ block header
       |reate
 
     .navbar__list
-      a.navbar__link(href='#') Home
-      a.navbar__link(href='#') About
-      a.navbar__link(href='#') Pricing
-      a.navbar__link(href='#') Blog
-      a.navbar__link(href='#') Contact
+      a.navbar__link(href='#home') Home
+      a.navbar__link(href='#about-us') About
+      a.navbar__link(href='#pricing') Pricing
+      a.navbar__link(href='#contact') Blog
+      a.navbar__link(href='#contact') Contact
   ///.navbar
 
   .menu
@@ -31,7 +31,7 @@ block header
   ///.menu
 
 block content
-  section.banner
+  section.banner#home
     .banner__wrapper
       h2.banner__heading
         span.banner__text Business Ideas
@@ -42,7 +42,7 @@ block content
       +btn('Discover Now').banner__btn
   ///.banner
 
-  section.about-us
+  section.about-us#about-us
     h2.section-heading About Us
     .section-heading__line
     .video__wrapper
@@ -59,7 +59,7 @@ block content
       i.fas.fa-quote-right
   ///.about-us
 
-  section.pricing
+  section.pricing#pricing
     h2.section-heading Pricing
     .section-heading__line
 
@@ -171,7 +171,7 @@ block content
 
   ///.pricing
 
-  section.contact
+  section.contact#contact
     h2.section-heading Contact
     .section-heading__line
 
@@ -220,3 +220,15 @@ block content
           })
           +btn('Send message', '', true)(type='submit')
   ///.contact
+
+block footer
+  +page-footer()
+    .page-footer__nav
+      a(href='#home') Home
+      a(href='#about-us') About Us
+      a(href='#pricing') Pricing
+      a(href='#contact') Contact
+
+    p.page-footer__copyright
+      | Copyright &copy; CodeAndCreate All Rights Reserved
+  ///.page-footer
