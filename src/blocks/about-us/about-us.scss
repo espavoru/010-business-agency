@@ -15,6 +15,15 @@
 
   background-color: #222020;
 
+  @media (max-width: 1400px) {
+    height: 120vh;
+    padding-top: 5rem;
+  }
+
+  @media (max-width: 700px) {
+    height: 100vh;
+  }
+
   &__paragraph {
     display: flex;
     flex-direction: column;
@@ -33,6 +42,27 @@
     line-height: 1.5;
     color: #ddd;
     text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+
+    @media (max-width: 1800px) {
+      right: 10rem;
+      width: 90rem;
+    }
+
+    @media (max-width: 1650px) {
+      right: 5rem;
+      bottom: 10rem;
+      width: 85rem;
+    }
+
+    @media (max-width: 1400px) {
+      left: 50%;
+      width: 80rem;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 500px) {
+      width: 60rem;
+    }
 
     .fa-quote-left {
       align-self: flex-start;

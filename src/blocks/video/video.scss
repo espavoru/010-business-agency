@@ -22,6 +22,29 @@
 
     box-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.7);
 
+    @media (max-width: 1800px) {
+      right: 10rem;
+      width: 90rem;
+      height: 45rem;
+    }
+
+    @media (max-width: 1650px) {
+      right: 5rem;
+      width: 85rem;
+      height: 40rem;
+    }
+
+    @media (max-width: 1400px) {
+      top: 20%;
+      left: 50%;
+      width: 80rem;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 500px) {
+      width: 60rem;
+    }
+
     &:hover {
 
       #{$block-name}__controls {

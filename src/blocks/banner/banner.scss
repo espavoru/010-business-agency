@@ -29,6 +29,10 @@
     }
   }
 
+  @media (max-width: 900px) {
+    top: 25%;
+  }
+
   &__wrapper {
     position: absolute;
     top: 20%;
@@ -45,6 +49,10 @@
     margin-bottom: 4rem;
     overflow: hidden;
     perspective: 50rem;
+
+    @media (max-width: 900px) {
+      height: 15rem;
+    }
   }
 
   &__text {
@@ -63,6 +71,19 @@
     letter-spacing: 3rem;
     color: #fff;
     text-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 1400px) {
+      font-size: 10rem;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 8rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 4.5rem;
+      letter-spacing: 2rem;
+    }
 
     /* stylelint-disable */
     &:nth-of-type(1) {
@@ -101,6 +122,11 @@
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
     animation: fadeAnimation 1s 1.5s forwards;
+
+    @media (max-width: 1400px) {
+      width: 45rem;
+      font-size: 3rem;
+    }
   }
 
   &__btn.btn {

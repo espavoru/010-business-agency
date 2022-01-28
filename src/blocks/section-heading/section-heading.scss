@@ -15,11 +15,19 @@
   color: #ddd;
   white-space: nowrap;
 
+  @media (max-width: 1400px) {
+    margin: 0;
+  }
+
   &__line {
     width: 15rem;
     height: 0.2rem;
     margin-top: 3rem;
 
     background-color: #ddd;
+
+    @media (max-width: 1500px) {
+      display: none;
+    }
   }
 }
