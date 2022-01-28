@@ -1,6 +1,6 @@
 /*global Swiper*/
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.pricingSwiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,

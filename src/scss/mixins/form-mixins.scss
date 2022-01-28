@@ -7,7 +7,7 @@
   min-height: calc(#{$line-height}em + #{$field-padding-vertical} + #{$field-padding-vertical} + 2px); // Привет, IE
   margin: 0;
   border: 1px solid $border-color;
-  border-radius: $border-radius;
+  // border-radius: $border-radius;
   padding: $field-padding-vertical  $field-padding-horizontal;
   line-height: $line-height;
   font-size: 1em;

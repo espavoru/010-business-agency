@@ -63,7 +63,7 @@ block content
     h2.section-heading Pricing
     .section-heading__line
 
-    .swiper
+    .swiper.pricingSwiper
       .pricing__cards-wrapper.swiper-wrapper
 
         .pricing__card.swiper-slide
@@ -170,3 +170,53 @@ block content
         ///.pricing__card
 
   ///.pricing
+
+  section.contact
+    h2.section-heading Contact
+    .section-heading__line
+
+    .contact__wrapper
+      .contact__details
+        .contact__phone
+          i.fas.fa-mobile-alt
+          h3 Phone
+          p +123 456 789
+          p +987 654 321
+
+        .contact__address
+          i.fas.fa-map-marker-alt
+          h3 Address
+          p Main Street 123
+          p Wall Street 321
+
+        .contact__email
+          i.fas.fa-envelope
+          h3 Email
+          p support@gmail.com
+          p sales@gmail.com
+
+      h2.contact__form-heading Get in touch
+      +form().contact__form
+          +field-text({
+            attrs: {
+              type: 'text',
+              name: 'Name',
+              placeholder: 'Your Name'
+            }
+          })
+          +field-text({
+            attrs: {
+              type: 'email',
+              name: 'Email',
+              placeholder: 'Your Email'
+            }
+          })
+          +field-text({
+            isTextarea: true,
+            attrs: {
+              name: 'Comment',
+              placeholder: 'Your Message'
+            }
+          })
+          +btn('Send message', '', true)(type='submit')
+  ///.contact
